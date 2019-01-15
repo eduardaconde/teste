@@ -11,10 +11,6 @@ function exibirPosts() {
         });
 }
 //--------------------------------------------------
-arrayDados = [];
-
-
-
 function sucesso(response) {
     return '<h6>Resultado:<h6>' +
         '<pre>' + JSON.stringify(response.data, null, '\t', ) + '</pre>'
