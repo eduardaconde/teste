@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>TESTE</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1 class="text-center">TESTE <small>NAVE</small></h1>
+
+        <div class="jumbotron-fluid text-left">
+            <h2>POSTS</h2>
+        </div>
+        <!----------------------------------------------------------->
+        <div class="row">
+            <div class="col-sm-6 card border-0">
+                <div class="card-header bg-dark text-light">
+                    POSTS DE TODOS USUÁRIOS
+                </div>
+                <div class="card-body">
+                    <button type="button" class="btn btn-info" onclick="exibirPosts()">Exibir Posts</button>
+                    <button type="button" class="btn btn-warning" onclick="fecharPosts()">Fechar</button>
+                    <div class="card-body" id="exibePosts"></div>
+                </div>
+            </div>
+            <!----------------------------------------------------------->
+            <div class="col-sm-6 card border-0">
+                <div class="card-header bg-dark text-light">
+                    PROCURAR POSTS
+                </div>
+                <div class="card-body">
+                    <input type="number" class="form-control mb-3" id="inputID" placeholder="Digite o ID do usuário.">
+                    <button type="button" class="btn btn-info" onclick="exibirPostID()">Exibir Posts</button>
+                    <button type="button" class="btn btn-warning" onclick="fecharPosts()">Fechar</button>
+                    <div class="card-body" id="exibePostsID"></div>
+                </div>
+
+            </div>
+        </div>
+        <!----------------------------------------------------------->
+        <div class="card border-0">
+            <div class="card-header bg-dark text-light border-0">
+                CRIAR POST
+            </div>
+            <div class="card-body">
+                <form class="form-group id=formCriarPost">
+                    <input type="text" class="form-control mb-3" id="inputTitulo" placeholder="Título">
+                    <input type="text" class="form-control mb-3" id="inputTexto" placeholder="...">
+                    <button type="button" class="btn btn-info" onclick="criarPost()">Criar</button>
+                    <button type="button" class="btn btn-warning" onclick="fecharPosts()">Fechar</button>
+                </form>
+                <div class="card-body" id="exibePostCriado"></div>
+            </div>
+
+        </div>
+
+        <!----------------------------------------------------------->
+        <!--
+        <div class="card">
+            <div class="card-header bg-dark text-light">
+                EXCLUIR POST
+            </div>
+            <div class="card-body">
+                <input type="number" class="form-control mb-3" id="inputIDexcluido" placeholder="Digite o ID do post que deseja EXCLUIR.">
+                <button type="button" class="btn btn-danger" onclick="excluiPost()">Excluir</button>
+                <div class="card-body" id="exibePostExcluido"></div>
+            </div>
+
+        </div>
+-->
+        <!----------------------------------------------------------->
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
